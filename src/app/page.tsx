@@ -63,10 +63,50 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className="flex flex-col items-center gap-5">
+        <div className="flex flex-col items-center gap-5 mb-20">
           <h2 className="font-bold text-5xl text-center">We scale like a dream</h2>
           <div>
             <button className="font-semibold bg-green-600 py-2 px-3 rounded-2xl text-white">Scale with us</button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="flex gap-12 px-32 py-10">
+          <div style={{ backgroundColor: "rgb(124 204 108)", boxShadow: "0px 0px 32px 10px #b2e5b8" }} className="rounded-3xl">
+            <div className="relative bottom-24">
+              <Image width={300} height={300} src="/scale/scale1.png" alt="scale" />
+            </div>
+            <div className="px-8 pb-8">
+              <h1 className="font-extrabold text-4xl mb-3">190 million+</h1>
+              <h6 className="">app downloads since 2015</h6>
+            </div>
+          </div>
+          <div style={{ backgroundColor: "rgb(212 139 200)", boxShadow: "0px 0px 32px 10px #d0b4d4" }} className="rounded-3xl">
+            <div className="relative bottom-24">
+              <Image width={300} height={300} src="/scale/scale2.png" alt="scale" />
+            </div>
+            <div className="px-8 pb-8">
+              <h1 className="font-extrabold text-4xl mb-3">2 million+</h1>
+              <h6 className="">driver partners</h6>
+            </div>
+          </div>
+          <div style={{ backgroundColor: "rgb(1255 174 98)", boxShadow: "0px 0px 32px 10px #d0b4d4" }} className="rounded-3xl">
+            <div className="relative bottom-24">
+              <Image width={300} height={300} src="/scale/scale3.png" alt="scale" />
+            </div>
+            <div className="px-8 pb-8">
+              <h1 className="font-extrabold text-4xl mb-3">900,000+</h1>
+              <h6 className="">GoFood merchants</h6>
+            </div>
+          </div>
+          <div style={{ backgroundColor: "rgb(74 201 227)", boxShadow: "0px 0px 32px 10px #b2e6f2" }} className="rounded-3xl">
+            <div className="relative bottom-24">
+              <Image width={300} height={300} src="/scale/scale4.png" alt="scale" />
+            </div>
+            <div className="px-8 pb-8">
+              <h1 className="font-extrabold text-4xl mb-3">2.448x</h1>
+              <h6 className="">jump in downloads from 2015 to 2020</h6>
+            </div>
           </div>
         </div>
       </section>
