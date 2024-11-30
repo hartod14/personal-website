@@ -1,4 +1,7 @@
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import 'swiper/css';
+import Slider from "@/components/slider";
 
 export default function Home() {
   return (
@@ -37,7 +40,7 @@ export default function Home() {
       <section id="section-4">
         <div className="bg-black">
           <div style={{ borderRadius: "90px 90px 0px 0px" }} className="bg-white w-50 relative">
-            <div className="flex gap-9 py-6 px-12">
+            <div className="flex justify-center gap-9 py-6 px-12">
               <div className="flex flex-col items-center relative bottom-24">
                 <Image className="mb-4" src="/gojek/svg1.png" width={160} height={160} alt="svg1" />
                 <h2 className="font-bold text-2xl mb-2 text-center">Fortune’s favorite</h2>
@@ -71,7 +74,7 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className="flex gap-12 px-32 py-10">
+        <div className="flex justify-center  gap-12 px-32 py-10">
           <div style={{ backgroundColor: "rgb(124 204 108)", boxShadow: "0px 0px 32px 10px #b2e5b8" }} className="rounded-3xl">
             <div className="relative bottom-24">
               <Image width={300} height={300} src="/scale/scale1.png" alt="scale" />
@@ -110,7 +113,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section>
+          <Slider />
+      </section>
     </section>
-
   );
 }
