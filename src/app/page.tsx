@@ -2,6 +2,8 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import Slider from "@/components/slider";
+import Slider2 from "@/components/slider2";
+import Slider3 from "@/components/slider3";
 
 export default function Home() {
   return (
@@ -65,7 +67,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
+      <section id="section-5">
         <div className="flex flex-col items-center gap-5 mb-20">
           <h2 className="font-bold text-5xl text-center">We scale like a dream</h2>
           <div>
@@ -73,7 +75,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
+      <section id="section-6">
         <div className="flex justify-center  gap-12 px-32 py-10">
           <div style={{ backgroundColor: "rgb(124 204 108)", boxShadow: "0px 0px 32px 10px #b2e5b8" }} className="rounded-3xl">
             <div className="relative bottom-24">
@@ -113,8 +115,142 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
-          <Slider />
+      <section id="section-7">
+        <Slider />
+      </section>
+      <section id="section-8">
+        <div className="pt-16 pb-48">
+          <h1 className="font-black text-center text-5xl mb-10">Join the ride</h1>
+          <div className="px-32 flex gap-12 items-center justify-center">
+            <div>
+              <Image className="mb-3" width={30} height={30} src="/join/join1.svg" alt="join1" />
+              <h3 className="text-xl mb-3 font-bold">Employees</h3>
+              <p className="text-sm mb-6">Behind Southeast Asia’s only hyper-growth startup are some billion-dollar brains, doing what they do best.</p>
+              <button className="font-semibold bg-green-600 py-2 px-3 rounded-2xl text-white">Join as employee</button>
+            </div>
+            <div>
+              <Image className="mb-3" width={30} height={30} src="/join/join2.svg" alt="join1" />
+              <h3 className="text-xl mb-3 font-bold">Driver partners</h3>
+              <p className="text-sm mb-6">We’re home to 2 million+ driver partners, who enjoy a bundle of health and financial benefits.</p>
+              <button className="font-semibold bg-green-600 py-2 px-3 rounded-2xl text-white">Join as drive partner</button>
+            </div>
+            <div>
+              <Image className="mb-3" width={30} height={30} src="/join/join3.svg" alt="join1" />
+              <h3 className="text-xl mb-3 font-bold">Merchants</h3>
+              <p className="text-sm mb-6">We empower 500,000+ merchants with cutting-edge technologies that help them multiply reach and sales.</p>
+              <button className="font-semibold bg-green-600 py-2 px-3 rounded-2xl text-white">Join as merchant</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section-9">
+        <div className="px-16 pb-24">
+          <h1 className="font-black text-center text-5xl mb-10">Perks of being in good company
+          </h1>
+          <Slider2 />
+        </div>
+      </section>
+      <section id="section-10">
+        <div className="bg-black flex flex-col items-center text-white py-16">
+          <h1 className="font-black text-center text-5xl mb-3 ">We build products that nations run on
+          </h1>
+          <div>
+            <button className="font-semibold bg-green-600 py-2 px-3 rounded-2xl text-white">View all products</button>
+          </div>
+        </div>
+      </section>
+      <section id="section-11">
+        <div className="p-16 bg-black">
+          <Slider3 />
+        </div>
+      </section>
+      <section id="section-12">
+        <div className="bg-black text-white py-6 px-32 flex items-center gap-24">
+          <Image src="https://cdn-site.gojek.com/uploads/home_spot_image_goclub_0555c2c8fe.svg" width={500} height={500} alt="loyality" />
+          <div className="flex flex-col gap-4">
+            <h1 className="font-extrabold text-4xl">Gojek Loyalty Program</h1>
+            <p>Make more transactions, get more rewards!</p>
+            <div>
+              <button className="font-semibold bg-green-600 py-2 px-3 rounded-2xl text-white">View More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section-13">
+        <div className="bg-gray-800 w-full relative">
+          <Image src="https://cdn-site.gojek.com/uploads/download_desktop_ccdc61425a.png" width={2000} height={1200} alt="goodToGo" />
+          <div className="absolute h-full w-full top-0 left-0 py-16">
+            <div className="flex px-16 w-full h-full flex-col md:justify-center m-auto w-75 gap-6 text-white justify-end">
+              <h1 className=" w-1/2 text-white sm:text-5xl font-bold"> Good to Go? Download the Gojek app today!</h1>
+              <div className="flex gap-5">
+                <button className="font-semibold text-black py-2 px-5 rounded-2xl bg-gray-100">App Store</button>
+                <button className="font-semibold text-black py-2 px-5 rounded-2xl bg-gray-100">Play Store</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section-14">
+        <div className="px-40 py-20 bg-black text-white">
+          <div className="mb-10">
+            <Image src="https://lelogama.go-jek.com/prime/upload/gojek-horizontal-logo-white.svg" width={100} height={100} alt="gogogo" />
+          </div>
+          <div className="flex gap-40">
+            <div>
+              <h5 className="font-bold mb-3">Company</h5>
+              <div className="flex flex-col gap-3">
+                <h6>About</h6>
+                <h6>Products</h6>
+                <h6>Blog</h6>
+              </div>
+            </div>
+            <div>
+              <h5 className="font-bold mb-3">Join with us</h5>
+              <div className="flex flex-col gap-3">
+                <h6>Driver Partners</h6>
+                <h6>Merchant Partners</h6>
+              </div>
+            </div>
+            <div>
+              <h5 className="font-bold mb-3">Careers</h5>
+              <div className="flex flex-col gap-3">
+                <h6>Student</h6>
+                <h6>Professional</h6>
+              </div>
+            </div>
+            <div>
+              <h5 className="font-bold mb-3">Get in touch</h5>
+              <div className="flex flex-col gap-3">
+                <h6>Help Center</h6>
+                <h6>Our Location</h6>
+              </div>
+            </div>
+            <div>
+              <div>
+                <h5 className="font-bold mb-3">Connect with Us</h5>
+                <div className="flex gap-3">
+                  <Image src="https://lelogama.go-jek.com/prime/upload/gojek-horizontal-logo-white.svg" width={100} height={100} alt="goodToGo" />
+                </div>
+              </div>
+              <div className="mt-10">
+                <h5 className="font-bold mb-3">Download the app</h5>
+                <div className="flex gap-3">
+                  <Image src="https://lelogama.go-jek.com/prime/upload/gojek-horizontal-logo-white.svg" width={100} height={100} alt="goodToGo" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr className="text-gray-800 my-12" />
+          <div className="flex gap-10">
+            <h5 className="underline">Privacy Notice</h5>
+            <h5 className="underline">Terms & Conditions</h5>
+            <h5 className="underline">Data Attribution</h5>
+            <h5 className="underline">Cookie Settings</h5>
+          </div>
+          <div className="mt-5">
+            © 2023 Gojek | Gojek is a trademark of PT GoTo Gojek Tokopedia Tbk. Registered in the Directorate General of Intellectual Property of the Republic of Indonesia.
+          </div>
+        </div>
       </section>
     </section>
   );
