@@ -30,7 +30,7 @@ export default function Home() {
             <h2 className="font-bold text-2xl">About Myself</h2>
           </div>
           <div className="p-5 bg-white rounded-xl">
-            <p>I'm a highly motivated person who is passionate about all things digital and programming. I’m bravely started switching my career from economic academic to the digital world, starting from UI/UX design and currently specializing as a Fullstack web developer.</p>
+            <p>I'm a highly motivated person who is passionate about all things digital and programming. I'm bravely started switching my career from economic academic to the digital world, starting from UI/UX design and currently specializing as a Fullstack web developer.</p>
           </div>
           <div className="p-5 bg-white rounded-xl">
             <p>Beside of that, I like to travelling and photographing — taking picture of different places, reading book, playing musical instrument, watching movies, and sometimes playing games.</p>
