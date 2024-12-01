@@ -1,6 +1,4 @@
-import Image from "next/image";
 import Form from 'next/form'
-import { Input } from "postcss";
 
 export default function Home() {
   return (
