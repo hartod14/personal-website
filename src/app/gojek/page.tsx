@@ -1,8 +1,8 @@
 import Image from "next/image";
 import 'swiper/css';
-import Slider from "@/components/slider";
-import Slider2 from "@/components/slider2";
-import Slider3 from "@/components/slider3";
+import Slider from "@/components/slicing-gojek/slider/slider";
+import Slider2 from "@/components/slicing-gojek/slider/slider2";
+import Slider3 from "@/components/slicing-gojek/slider/slider3";
 
 export default function Home() {
   return (
