@@ -31,7 +31,13 @@ export default function Home() {
         <section id="about" className="md:flex gap-20 bg-gray-100 py-24 px-4 md:px-20">
           <div>
             <div className="bg-white p-2">
-              <Image width={1600} height={300} src="/portfolio/me.jpg" alt="scale" />
+              <Image
+                width={1600}
+                height={300}
+                src="/portfolio/me.jpg"
+                alt="scale"
+                loading="eager"
+              />
             </div>
           </div>
           <div className="flex flex-col gap-4">
@@ -46,6 +52,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
 
         <section id="skills" className=" pt-24 pb px-4 md:px-20">
           <h1 className="text-center text-3xl font-bold mb-10">My Skills</h1>
