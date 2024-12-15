@@ -28,17 +28,16 @@ export default function Home() {
           <BlinkText />
         </section>
 
-        <section id="about" className="md:flex gap-20 bg-gray-100 py-24 px-4 md:px-20">
+        <section id="about" className="md:flex gap-16 bg-gray-100 py-24 px-4 md:px-20">
           <div className="mb-3">
-            <div className="bg-white p-2">
-              <Image
-                width={1260}
-                height={1260}
-                src="/portfolio/me.jpg"
-                alt="scale"
-                loading="eager"
-              />
-            </div>
+            <Image
+            className="bg-white p-2 rounded-lg"
+              width={1260}
+              height={1260}
+              src="/portfolio/me.jpg"
+              alt="scale"
+              loading="eager"
+            />
           </div>
           <div className="flex flex-col gap-4">
             <div className="p-5 bg-white rounded-xl">
