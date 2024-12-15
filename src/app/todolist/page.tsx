@@ -3,24 +3,18 @@
 import { useState } from 'react';
 
 interface Task {
-  id: any;
+  id: number;
   text: string;
-  completed: boolean
+  completed: boolean;
 }
 
 export default function Home() {
   const [tasks, setTasks] = useState<Task[]>([])
   const [taskInput, setTaskInput] = useState<string>('');
 
-  // useEffect(()=> {
-  //   alert('Success add task')
-  // },[tasks])
-
   //ADD TASK
   const addTask = () => {
     setTasks([...tasks, { id: Date.now(), text: taskInput, completed: false }])
-    // tasks.push({ id: Date.now(), text: taskInput, completed: false });
-    // setTasks(tasks);
     setTaskInput('')
   }
 
@@ -32,7 +26,7 @@ export default function Home() {
   //REASSIGN DONE TASK
   const toogleTaskCompleted = (id: number) => {
     setTasks(
-      tasks.map((task) => task.id == id ? { ...task, completed: !task.completed } : task
+      tasks.map((task) => task.id === id ? { ...task, completed: !task.completed } : task
       )
     )
   }
@@ -44,7 +38,7 @@ export default function Home() {
           <h1 className="p-10 text-center font-bold text-3xl mb-5">Chores ToDo List</h1>
           <div className="flex flex-col gap-5 px-10">
             {tasks.map((task) => (
-              <div key={task.id} id={task.id} className="flex gap-5">
+              <div key={task.id} id={task.id.toString()} className="flex gap-5">
                 <div className="flex items-center justify-between w-full gap-10 mb-4">
                   <div className="">
                     <input
