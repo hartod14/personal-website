@@ -1,11 +1,11 @@
 "use client"
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import "@/styles/portfolio/style.css"
 
 export default function BlinkText() {
-    <style></style>
-    const phrases = ["Fullstack Developer", "Next.js Developer", "UI/UX Enthusiast"];
+    const phrases = useMemo(() => ["Fullstack Developer", "Next.js Developer", "UI/UX Enthusiast"], []);
+
     const [text, setText] = useState("");
     const [isDeleting, setIsDeleting] = useState(false);
     const [loopNum, setLoopNum] = useState(0);
@@ -39,8 +39,7 @@ export default function BlinkText() {
 
     return (
         <div>
-            <h3 className="text-3xl text-center text-blue-900 font-semibold">I'm a {text} <span className="blinking-cursor">|</span></h3>
-
+            <h3 className="text-3xl text-center text-blue-900 font-semibold">I am a {text} <span className="blinking-cursor">|</span></h3>
         </div>
     );
 }
