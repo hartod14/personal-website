@@ -31,12 +31,13 @@ export default function Home() {
         <section id="about" className="md:flex gap-16 bg-gray-100 py-24 px-4 md:px-20">
           <div className="mb-3">
             <Image
-            className="bg-white p-2 rounded-lg"
-              width={1260}
-              height={1260}
+              className="bg-white p-2 rounded-lg"
+              width={960} 
+              height={960}
               src="/portfolio/me.jpg"
               alt="scale"
               loading="eager"
+              sizes="(max-width: 768px) 600px, 1260px" 
             />
           </div>
           <div className="flex flex-col gap-4">
@@ -51,6 +52,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
 
 
         <section id="skills" className=" pt-24 pb px-4 md:px-20">
