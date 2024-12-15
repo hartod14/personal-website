@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function DetailTodolist() {
@@ -72,10 +73,10 @@ export default function DetailTodolist() {
                     <h2 className="text-3xl font-semibold text-blue-800">Project Visuals</h2>
                     <div className="flex flex-wrap gap-8 mt-6 w-full">
                         <div className="rounded-lg overflow-hidden shadow-lg">
-                            <img src="/todolist/todolist_work.jpg" alt="Project Screenshot 1" className="w-full h-64 object-cover" />
+                            <Image width={1440} height={720} src="/todolist/todolist_work.jpg" alt="Project Screenshot 1" className="w-full h-64 object-cover" />
                         </div>
                         <div className="rounded-lg overflow-hidden shadow-lg">
-                            <img src="/todolist/todolist2.jpg" alt="Project Screenshot 2" className="w-full h-64 object-cover" />
+                            <Image width={1440} height={720} src="/todolist/todolist2.jpg" alt="Project Screenshot 2" className="w-full h-64 object-cover" />
                         </div>
                     </div>
                 </div>

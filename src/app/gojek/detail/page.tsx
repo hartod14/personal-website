@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function DetailGojek() {
@@ -63,7 +64,7 @@ export default function DetailGojek() {
                         Key steps I followed:
                         <ul className="list-disc pl-6 mt-2 text-gray-700">
                             <li>Set up the Next.js environment and install dependencies</li>
-                            <li>Used Tailwind's utility classes for layout and styling</li>
+                            <li>Used Tailwind&apos;s utility classes for layout and styling</li>
                             <li>Implemented a slider component using React state to handle transitions</li>
                             <li>Tested the site across different screen sizes to ensure responsiveness</li>
                         </ul>
@@ -88,13 +89,13 @@ export default function DetailGojek() {
                     <h2 className="text-3xl font-semibold text-blue-800">Project Visuals</h2>
                     <div className="flex flex-wrap gap-8 mt-6 w-full">
                         <div className="rounded-lg overflow-hidden shadow-lg">
-                            <img src="/gojek/gojek_work.jpg" alt="Project Screenshot 1" className="w-full h-64 object-cover" />
+                            <Image width={1440} height={720} src="/gojek/gojek_work.jpg" alt="Project Screenshot 1" className="w-full h-64 object-cover" />
                         </div>
                         <div className="rounded-lg overflow-hidden shadow-lg">
-                            <img src="/gojek/gojek2.jpg" alt="Project Screenshot 2" className="w-full h-64 object-cover" />
+                            <Image width={1440} height={720} src="/gojek/gojek2.jpg" alt="Project Screenshot 2" className="w-full h-64 object-cover" />
                         </div>
                         <div className="rounded-lg overflow-hidden shadow-lg">
-                            <img src="/gojek/gojek3.jpg" alt="Project Screenshot 3" className="w-full h-64 object-cover" />
+                            <Image width={1440} height={720} src="/gojek/gojek3.jpg" alt="Project Screenshot 3" className="w-full h-64 object-cover" />
                         </div>
                     </div>
                 </div>
