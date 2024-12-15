@@ -29,11 +29,11 @@ export default function Home() {
         </section>
 
         <section id="about" className="md:flex gap-20 bg-gray-100 py-24 px-4 md:px-20">
-          <div>
+          <div className="mb-3">
             <div className="bg-white p-2">
               <Image
-                width={1600}
-                height={300}
+                width={1260}
+                height={1260}
                 src="/portfolio/me.jpg"
                 alt="scale"
                 loading="eager"
@@ -308,7 +308,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <div className="flex items-center space-x-4">
-                <img className="w-12 h-12 rounded-full object-cover" src="/portfolio/testimonial/person1.jpg" alt="Client Photo" />
+                <Image width={200} height={200} className="w-12 h-12 rounded-full object-cover" src="/portfolio/testimonial/person1.jpg" alt="Client Photo" />
                 <div>
                   <p className="text-xl font-semibold text-gray-800">John Doe</p>
                   <p className="text-sm text-gray-500">CEO, Tech Innovators</p>
@@ -319,7 +319,7 @@ export default function Home() {
 
             <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <div className="flex items-center space-x-4">
-                <img className="w-12 h-12 rounded-full object-cover" src="/portfolio/testimonial/person2.jpg" alt="Client Photo" />
+                <Image width={200} height={200} className="w-12 h-12 rounded-full object-cover" src="/portfolio/testimonial/person2.jpg" alt="Client Photo" />
                 <div>
                   <p className="text-xl font-semibold text-gray-800">Jane Smith</p>
                   <p className="text-sm text-gray-500">CTO, Digital Solutions</p>
@@ -330,7 +330,7 @@ export default function Home() {
 
             <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <div className="flex items-center space-x-4">
-                <img className="w-12 h-12 rounded-full object-cover" src="/portfolio/testimonial/person3.jpg" alt="Client Photo" />
+                <Image width={200} height={200} className="w-12 h-12 rounded-full object-cover" src="/portfolio/testimonial/person3.jpg" alt="Client Photo" />
                 <div>
                   <p className="text-xl font-semibold text-gray-800">Michael Lee</p>
                   <p className="text-sm text-gray-500">Freelancer</p>
