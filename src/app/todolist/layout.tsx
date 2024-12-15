@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "@/styles/todolist/style.css";
 
 export const metadata: Metadata = {
-  title: "Create Next App",
+  title: "To do List",
   description: "To Do List",
 };
 

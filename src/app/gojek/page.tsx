@@ -78,7 +78,7 @@ export default function Home() {
         <div className="flex justify-center  gap-12 px-32 py-10">
           <div style={{ backgroundColor: "rgb(124 204 108)", boxShadow: "0px 0px 32px 10px #b2e5b8" }} className="rounded-3xl">
             <div className="relative bottom-24">
-              <Image width={300} height={300} src="/scale/scale1.png" alt="scale" />
+              <Image width={300} height={300} src="/gojek/scale/scale1.png" alt="scale" />
             </div>
             <div className="px-8 pb-8">
               <h1 className="font-extrabold text-4xl mb-3">190 million+</h1>
@@ -87,7 +87,7 @@ export default function Home() {
           </div>
           <div style={{ backgroundColor: "rgb(212 139 200)", boxShadow: "0px 0px 32px 10px #d0b4d4" }} className="rounded-3xl">
             <div className="relative bottom-24">
-              <Image width={300} height={300} src="/scale/scale2.png" alt="scale" />
+              <Image width={300} height={300} src="/gojek/scale/scale2.png" alt="scale" />
             </div>
             <div className="px-8 pb-8">
               <h1 className="font-extrabold text-4xl mb-3">2 million+</h1>
@@ -96,7 +96,7 @@ export default function Home() {
           </div>
           <div style={{ backgroundColor: "rgb(1255 174 98)", boxShadow: "0px 0px 32px 10px #d0b4d4" }} className="rounded-3xl">
             <div className="relative bottom-24">
-              <Image width={300} height={300} src="/scale/scale3.png" alt="scale" />
+              <Image width={300} height={300} src="/gojek/scale/scale3.png" alt="scale" />
             </div>
             <div className="px-8 pb-8">
               <h1 className="font-extrabold text-4xl mb-3">900,000+</h1>
@@ -105,7 +105,7 @@ export default function Home() {
           </div>
           <div style={{ backgroundColor: "rgb(74 201 227)", boxShadow: "0px 0px 32px 10px #b2e6f2" }} className="rounded-3xl">
             <div className="relative bottom-24">
-              <Image width={300} height={300} src="/scale/scale4.png" alt="scale" />
+              <Image width={300} height={300} src="/gojek/scale/scale4.png" alt="scale" />
             </div>
             <div className="px-8 pb-8">
               <h1 className="font-extrabold text-4xl mb-3">2.448x</h1>
@@ -122,19 +122,19 @@ export default function Home() {
           <h1 className="font-black text-center text-5xl mb-10">Join the ride</h1>
           <div className="px-32 flex gap-12 items-center justify-center">
             <div>
-              <Image className="mb-3" width={30} height={30} src="/join/join1.svg" alt="join1" />
+              <Image className="mb-3" width={30} height={30} src="/gojek/join/join1.svg" alt="join1" />
               <h3 className="text-xl mb-3 font-bold">Employees</h3>
               <p className="text-sm mb-6">Behind Southeast Asia’s only hyper-growth startup are some billion-dollar brains, doing what they do best.</p>
               <button className="font-semibold bg-green-600 py-2 px-3 rounded-2xl text-white">Join as employee</button>
             </div>
             <div>
-              <Image className="mb-3" width={30} height={30} src="/join/join2.svg" alt="join1" />
+              <Image className="mb-3" width={30} height={30} src="/gojek/join/join2.svg" alt="join1" />
               <h3 className="text-xl mb-3 font-bold">Driver partners</h3>
               <p className="text-sm mb-6">We’re home to 2 million+ driver partners, who enjoy a bundle of health and financial benefits.</p>
               <button className="font-semibold bg-green-600 py-2 px-3 rounded-2xl text-white">Join as drive partner</button>
             </div>
             <div>
-              <Image className="mb-3" width={30} height={30} src="/join/join3.svg" alt="join1" />
+              <Image className="mb-3" width={30} height={30} src="/gojek/join/join3.svg" alt="join1" />
               <h3 className="text-xl mb-3 font-bold">Merchants</h3>
               <p className="text-sm mb-6">We empower 500,000+ merchants with cutting-edge technologies that help them multiply reach and sales.</p>
               <button className="font-semibold bg-green-600 py-2 px-3 rounded-2xl text-white">Join as merchant</button>

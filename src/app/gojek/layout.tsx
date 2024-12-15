@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import "@/styles/todolist/style.css";
 
 export const metadata: Metadata = {
-  title: "Create Next App",
-  description: "Slicing Gojek",
+  title: "Gojek Slicing",
+  description: "Gojek Gopay Gopoint",
 };
 
-export default function TodoListLayout({
+export default function GojekLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
