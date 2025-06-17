@@ -51,6 +51,7 @@ export default function Skills() {
   return (
     <section className="py-24 px-4 md:px-20">
       <Title title="My Skills" />
+      
       <div className="md:flex justify-center gap-20 mt-10">
         {skillCategories.map((category) => (
           <div key={category.title} className="mb-10 flex-1 max-w-[400px]">
