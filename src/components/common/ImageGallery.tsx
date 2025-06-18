@@ -42,8 +42,8 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images, title, initialIndex
       <Image
         src={images[currentIndex]}
         alt={`${title} Image ${currentIndex + 1}`}
-        layout="fill"
-        objectFit="cover"
+        fill
+        style={{ objectFit: 'cover' }}
         className="cursor-pointer transition-transform duration-300 hover:scale-105"
         onClick={openZoom}
       />
@@ -76,9 +76,9 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images, title, initialIndex
             <Image
               src={images[currentIndex]}
               alt={`${title} Zoomed Image`}
-              width={1200} // Adjust as needed for desired zoom size
-              height={800} // Adjust as needed
-              objectFit="contain"
+              width={1200}
+              height={800}
+              style={{ objectFit: 'contain' }}
               className="max-w-full max-h-[90vh]"
             />
             <button

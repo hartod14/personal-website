@@ -8,7 +8,7 @@ interface ProjectCardProps {
   description: string;
   techStack: string[];
   detailsLink: string;
-  livePreviewLink?: string; // Optional
+  link?: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -17,7 +17,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   techStack,
   detailsLink,
-  livePreviewLink,
+  link,
 }) => {
 
   return (
@@ -27,7 +27,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           src={imageUrl}
           alt={title}
           layout="fill"
-          objectFit="cover"
+          style={{ objectFit: 'cover' }}
           className="rounded-t-lg transition-transform duration-300 hover:scale-110"
         />
       </div>
@@ -45,7 +45,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </span>
           ))}
         </div>
-        <div className="flex justify-between items-center mt-auto">
+        
+        <div className="flex items-center justify-between gap-4">
           <Link
             href={detailsLink}
             className="text-blue-600 hover:text-blue-800 font-semibold flex items-center"
@@ -66,31 +67,26 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               />
             </svg>
           </Link>
-          {livePreviewLink && (
+          {link && (
             <Link
-              href={livePreviewLink}
+              href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-gray-700 text-sm"
+              className="text-gray-600 hover:text-gray-800 font-semibold flex items-center"
             >
+              Live Demo
               <svg
-                className="w-4 h-4"
-                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
+                className="h-4 w-4 ml-1"
                 fill="none"
                 viewBox="0 0 24 24"
+                stroke="currentColor"
               >
                 <path
-                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   strokeWidth="2"
-                  d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"
-                />
-                <path
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                 />
               </svg>
             </Link>

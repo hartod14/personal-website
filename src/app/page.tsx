@@ -55,7 +55,7 @@ export default function Home() {
             <Title title="About Myself" />
             <p className="text-secondary leading-7 text-center text-lg">
               A professional full-stack web developer with over <b>3 years</b>{" "}
-              of industry experience and handled <b>15+</b> various projects.
+              of industry experience and handled <b>10+</b> various projects.
               I`m a highly motivated person who is passionate about all things
               digital and programming. I`m bravely started switching my career
               from economic academic to the digital world, starting from UI/UX
@@ -82,6 +82,7 @@ export default function Home() {
                 description={project.description}
                 techStack={project.techStack}
                 detailsLink={project.detailsLink}
+                link={project.link}
               />
             ))}
           </div>
