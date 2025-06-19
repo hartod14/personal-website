@@ -17,7 +17,7 @@ export default function Home() {
       <main>
         <section
           id="text-box"
-          className="flex flex-col gap-5 md:mt-32 mb-40 md:mb-52 px-4 md:px-20 relative"
+          className="flex flex-col gap-5 mt-20 md:mt-32 mb-40 md:mb-52 px-4 md:px-20 relative"
         >
           <div className="text-2xl text-center text-blue-600">
             👋 Hello, My name is

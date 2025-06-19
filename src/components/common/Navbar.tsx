@@ -38,6 +38,12 @@ const Navbar = () => {
           >
             About
           </a>
+          {/* <a
+            className="font-normal hover:-translate-y-1 hover:text-blue-600 transition-all duration-200"
+            href="#experience"
+          >
+            My Experience
+          </a> */}
           <a
             className="font-normal hover:-translate-y-1 hover:text-blue-600 transition-all duration-200"
             href="#works"
@@ -46,13 +52,15 @@ const Navbar = () => {
           </a>
           <a
             className="font-normal hover:-translate-y-1 hover:text-blue-600 transition-all duration-200"
-            href="#contact"
+            href="/CV_HariTody_FullstackWebDev_2.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Resume
           </a>
         </div>
         <a
-          className="p-3 text-sm bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200"
+          className="p-1.5 md:p-3 text-sm bg-blue-600 text-white rounded-md md:rounded-lg hover:bg-blue-700 transition-colors duration-200"
           href="#contact"
         >
           Contact
