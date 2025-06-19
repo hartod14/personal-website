@@ -14,6 +14,104 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "roxitgym",
+    title: "RoxitGYM",
+    description:
+      "RoxitGYM is a gym management system developed for a specific fitness center. The platform streamlines various gym operations, including attendance tracking, class bookings, staff management, and member interactions, both through the web and mobile interface.",
+    imageThumbnail: "/portfolio/roxitgym/1.png",
+    images: ["/portfolio/roxitgym/1.png", "/portfolio/roxitgym/2.png"],
+    techStack: ["Laravel", "MySQL"],
+    detailsLink: "/projects/roxitgym",
+    link: "https://roxit.co.id",
+    keyFeatures: [
+      "Integrated with gate camera systems to automatically detect and log member check-ins.",
+      "Handles transactions, staff administration, member records, and scheduling data.",
+      "Allows members to book personal training sessions, instructors, and fitness classes via their mobile devices.",
+      "Staff (PTs and instructors) and members can manage their schedules and accounts directly through the mobile platform.",
+    ],
+    challengesAndSolutions:
+      "I supported the core developer by refactoring and maintaining legacy code to improve overall system performance and readability. I also contributed to the development of several new features within the admin panel, helping enhance administrative workflows and feature accessibility.",
+  },
+  {
+    id: "mazzumultivision",
+    title: "Mazzumultivision",
+    description:
+      'A ticket management system that allows users to purchase tickets online by selecting specific seats or ticket types. Designed and integrated an interactive seat map for user seat selection. Participated in the development of one of the biggest stand-up comedy events "Agak Laen".',
+    imageThumbnail: "/portfolio/mazzu/1.png",
+    images: [
+      "/portfolio/mazzu/1.png",
+      "/portfolio/mazzu/2.png",
+      "/portfolio/mazzu/3.png",
+      "/portfolio/mazzu/4.png",
+    ],
+    techStack: ["Laravel", "MySQL", "React", "Midtrans", "QR Code Scanning"],
+    detailsLink: "/projects/mazzumultivision",
+    link: "",
+    keyFeatures: [
+      "Event creation with support for various seat configurations",
+      "Designed and integrated an interactive seat map for user seat selection",
+      "Integrated the Midtrans payment gateway for secure online transactions",
+      "Automatically generates PDF tickets and sends them via email after successful transactions",
+    ],
+    challengesAndSolutions:
+      "Developing dynamic event and ticket type forms to make it easier for event organizers to create events, while ensuring users receive the correct tickets they ordered",
+  },
+
+  {
+    id: "undangbahagia",
+    title: "UndangBahagia",
+    description:
+      "UndangBahagia is a digital wedding invitation platform that allows users to create personalized and interactive wedding invitations. The platform is designed to be user-friendly and visually engaging, combining elegant design with seamless functionality.",
+    imageThumbnail: "/portfolio/undangbahagia/1.png",
+    images: [
+      "/portfolio/undangbahagia/1.png",
+      "/portfolio/undangbahagia/2.png",
+      "/portfolio/undangbahagia/3.png",
+    ],
+    techStack: ["Next.js", "Golang", "VPS", "Docker", "MySQL", "Figma"],
+    detailsLink: "/projects/undangbahagia",
+    link: "https://undangbahagia.com",
+    keyFeatures: [
+      "Users can create their own wedding invitations by entering relevant details such as bride and groom names, date, location, and event timeline.",
+      "Features interactive animations and smooth transitions to enhance the overall user experience.",
+      "Responsive design ensures the invitations look great on both desktop and mobile devices.",
+      "Custom invitations can be shared via URL, eliminating the need for physical cards.",
+    ],
+    challengesAndSolutions:
+      "One of the main challenges was designing and building visually creative and diverse invitation templates while keeping performance and responsiveness in mind. I focused primarily on UI/UX design, crafting intuitive and beautiful interfaces using Figma. Additionally, I contributed to creating the ERD and defining the business flow, ensuring smooth integration between user inputs, frontend rendering, and backend data management. I also occasionally supported both frontend and backend developers during implementation, helping with styling, data structure planning, and user interaction logic.",
+  },
+  {
+    id: "stayza",
+    title: "Stayza",
+    description:
+      "Stayza is a full-stack property rental web application developed as part of a bootcamp project. The platform connects property owners with renters, enabling a seamless process for listing, discovering, booking, and managing rental properties. Designed with scalability and user experience in mind, Stayza simulates a real-world rental platform similar to Booking.com.",
+    imageThumbnail: "/portfolio/stayza/1.png",
+    images: [
+      "/portfolio/stayza/1.png",
+      "/portfolio/stayza/2.png",
+      "/portfolio/stayza/3.png",
+      "/portfolio/stayza/4.png",
+    ],
+    techStack: [
+      "Next.js",
+      "Express.js",
+      "PostgreSQL",
+      "Cloudinary",
+      "Vercel",
+      "Midtrans",
+    ],
+    detailsLink: "/projects/stayza",
+    link: "https://stayza-renting-property.vercel.app/",
+    keyFeatures: [
+      "Developed full-stack web application that allows users to search, book, and rent properties",
+      "Created system for property owners (tenants) to list, manage, and monitor their properties",
+      "Implemented payment gateway to handle online transactions",
+      "Customizable menu and user roles",
+    ],
+    challengesAndSolutions:
+      "One of the key challenges in developing Stayza was designing a clean and user-friendly UI/UX that remained fully responsive across various devices. Implementing efficient image upload functionality using Cloudinary's API and integrating it seamlessly into the property listing form was also a critical task. Additionally, integrating the Midtrans payment gateway required careful handling to ensure secure and smooth online transactions, including managing transaction status updates and fallback scenarios. On the backend, I focused on building a well-structured relational database schema using PostgreSQL to support complex relationships between users, properties, bookings, and payments. Finally, I managed deployment and environment configurations for both the frontend and backend, leveraging Vercel and other cloud-based tools to ensure a smooth and stable production environment.",
+  },
+  {
     id: "plut-umkm",
     title: "PLUT-UMKM",
     description:
@@ -79,30 +177,7 @@ export const projects: Project[] = [
     challengesAndSolutions:
       "Building a dynamic document system that adapts to the diverse and detailed requirements of various notary services. Ensuring data isolation, security, and compliance across multiple tenants while maintaining system scalability and ease of use. Integrated React components into Blade views and APIs to allow real-time, widget-based form customization (e.g., date pickers, dynamic dropdowns). This hybrid approach enables users to build and manage forms visually while maintaining strong backend validation and storage via Laravel.",
   },
-  {
-    id: "mazzumultivision",
-    title: "Mazzumultivision",
-    description:
-      'A ticket management system that allows users to purchase tickets online by selecting specific seats or ticket types. Designed and integrated an interactive seat map for user seat selection. Participated in the development of one of the biggest stand-up comedy events "Agak Laen".',
-    imageThumbnail: "/portfolio/mazzu/1.png",
-    images: [
-      "/portfolio/mazzu/1.png",
-      "/portfolio/mazzu/2.png",
-      "/portfolio/mazzu/3.png",
-      "/portfolio/mazzu/4.png",
-    ],
-    techStack: ["Laravel", "MySQL", "React", "Midtrans", "QR Code Scanning"],
-    detailsLink: "/projects/mazzumultivision",
-    link: "",
-    keyFeatures: [
-      "Event creation with support for various seat configurations",
-      "Designed and integrated an interactive seat map for user seat selection",
-      "Integrated the Midtrans payment gateway for secure online transactions",
-      "Automatically generates PDF tickets and sends them via email after successful transactions",
-    ],
-    challengesAndSolutions:
-      "Developing dynamic event and ticket type forms to make it easier for event organizers to create events, while ensuring users receive the correct tickets they ordered",
-  },
+
   {
     id: "hrsoftware",
     title: "Hrsoftware",
@@ -141,51 +216,7 @@ export const projects: Project[] = [
     challengesAndSolutions:
       "My main contribution to the JovaResto project was developing the Superadmin Dashboard, which serves as the central control panel for managing the entire platform. I implemented core features such as tenant management, allowing superadmins to create, update, and suspend restaurant tenants. Additionally, I worked on integrating system-level settings and monitoring tools to give administrators better visibility and control over the application. Throughout the project, I also supported the main backend engineer by assisting with core logic development and debugging tasks, ensuring smooth and stable system",
   },
-  {
-    id: "stayza",
-    title: "Stayza",
-    description:
-      "Stayza is a full-stack property rental web application developed as part of a bootcamp project. The platform connects property owners with renters, enabling a seamless process for listing, discovering, booking, and managing rental properties. Designed with scalability and user experience in mind, Stayza simulates a real-world rental platform similar to Booking.com.",
-    imageThumbnail: "/portfolio/stayza/1.png",
-    images: ["/portfolio/stayza/1.png", "/portfolio/stayza/2.png", "/portfolio/stayza/3.png", "/portfolio/stayza/4.png"],
-    techStack: [
-      "Next.js",
-      "Express.js",
-      "PostgreSQL",
-      "Cloudinary",
-      "Vercel",
-      "Midtrans",
-    ],
-    detailsLink: "/projects/stayza",
-    link: "https://stayza-renting-property.vercel.app/",
-    keyFeatures: [
-      "Developed full-stack web application that allows users to search, book, and rent properties",
-      "Created system for property owners (tenants) to list, manage, and monitor their properties",
-      "Implemented payment gateway to handle online transactions",
-      "Customizable menu and user roles",
-    ],
-    challengesAndSolutions:
-      "One of the key challenges in developing Stayza was designing a clean and user-friendly UI/UX that remained fully responsive across various devices. Implementing efficient image upload functionality using Cloudinary's API and integrating it seamlessly into the property listing form was also a critical task. Additionally, integrating the Midtrans payment gateway required careful handling to ensure secure and smooth online transactions, including managing transaction status updates and fallback scenarios. On the backend, I focused on building a well-structured relational database schema using PostgreSQL to support complex relationships between users, properties, bookings, and payments. Finally, I managed deployment and environment configurations for both the frontend and backend, leveraging Vercel and other cloud-based tools to ensure a smooth and stable production environment.",
-  },
-  {
-    id: "roxitgym",
-    title: "RoxitGYM",
-    description:
-      "RoxitGYM is a gym management system developed for a specific fitness center. The platform streamlines various gym operations, including attendance tracking, class bookings, staff management, and member interactions, both through the web and mobile interface.",
-    imageThumbnail: "/portfolio/roxitgym/1.png",
-    images: ["/portfolio/roxitgym/1.png","/portfolio/roxitgym/2.png"],
-    techStack: ["Laravel", "MySQL"],
-    detailsLink: "/projects/roxitgym",
-    link: "https://roxit.co.id",
-    keyFeatures: [
-      "Integrated with gate camera systems to automatically detect and log member check-ins.",
-      "Handles transactions, staff administration, member records, and scheduling data.",
-      "Allows members to book personal training sessions, instructors, and fitness classes via their mobile devices.",
-      "Staff (PTs and instructors) and members can manage their schedules and accounts directly through the mobile platform.",
-    ],
-    challengesAndSolutions:
-      "I supported the core developer by refactoring and maintaining legacy code to improve overall system performance and readability. I also contributed to the development of several new features within the admin panel, helping enhance administrative workflows and feature accessibility.",
-  },
+
   {
     id: "stiab",
     title: "STIAB Bodhidharma",
@@ -205,31 +236,12 @@ export const projects: Project[] = [
       "A major challenge was ensuring consistency and scalability while building and maintaining multiple admin panels with similar structures but different content needs. I had to ensure API reliability and performance for each site, with secure data access and optimized query handling. Managing authentication, access control, and preventing cross-site data interference were also key focuses throughout the development process.",
   },
   {
-    id: "undangbahagia",
-    title: "UndangBahagia",
-    description:
-      "UndangBahagia is a digital wedding invitation platform that allows users to create personalized and interactive wedding invitations. The platform is designed to be user-friendly and visually engaging, combining elegant design with seamless functionality.",
-    imageThumbnail: "/portfolio/undangbahagia/1.png",
-    images: ["/portfolio/undangbahagia/1.png","/portfolio/undangbahagia/2.png","/portfolio/undangbahagia/3.png"],
-    techStack: ["Next.js", "Golang", "VPS", "Docker", "MySQL", "Figma"],
-    detailsLink: "/projects/undangbahagia",
-    link: "https://undangbahagia.com",
-    keyFeatures: [
-      "Users can create their own wedding invitations by entering relevant details such as bride and groom names, date, location, and event timeline.",
-      "Features interactive animations and smooth transitions to enhance the overall user experience.",
-      "Responsive design ensures the invitations look great on both desktop and mobile devices.",
-      "Custom invitations can be shared via URL, eliminating the need for physical cards.",
-    ],
-    challengesAndSolutions:
-      "One of the main challenges was designing and building visually creative and diverse invitation templates while keeping performance and responsiveness in mind. I focused primarily on UI/UX design, crafting intuitive and beautiful interfaces using Figma. Additionally, I contributed to creating the ERD and defining the business flow, ensuring smooth integration between user inputs, frontend rendering, and backend data management. I also occasionally supported both frontend and backend developers during implementation, helping with styling, data structure planning, and user interaction logic.",
-  },
-  {
     id: "grhamanggala",
     title: "GrhaManggala",
     description:
       "GrhaManggala is a content management system (CMS) and mobile-supported platform developed for a Vihara's company profile and religious activities. The system includes a web-based admin panel and a mobile application that allows users to register for events and track their attendance at temple activities.",
     imageThumbnail: "/portfolio/grhamanggala/1.png",
-    images: ["/portfolio/grhamanggala/1.png","/portfolio/grhamanggala/2.png"],
+    images: ["/portfolio/grhamanggala/1.png", "/portfolio/grhamanggala/2.png"],
     techStack: ["Laravel", "MySQL"],
     detailsLink: "/projects/grhamanggala",
     link: "https://www.grhabuddhamanggala.or.id/",
@@ -247,7 +259,7 @@ export const projects: Project[] = [
     description:
       "Kalam Kudus is a web-based Content Management System (CMS) developed for a school to manage and display its profile, announcements, and general information. The platform provides an admin panel that allows the school staff to easily update content on the school's official landing page.",
     imageThumbnail: "/portfolio/kalamkudus/1.png",
-    images: ["/portfolio/kalamkudus/1.png","/portfolio/kalamkudus/2.png"],
+    images: ["/portfolio/kalamkudus/1.png", "/portfolio/kalamkudus/2.png"],
     techStack: ["Laravel", "MySQL"],
     detailsLink: "/projects/kalamkudus",
     link: "https://www.skkk2batam.sch.id/",

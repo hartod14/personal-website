@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { projects } from "@/data/projects";
 import ProjectDetail from "@/components/portfolio/ProjectDetail";
@@ -6,10 +6,8 @@ import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 import { notFound, useParams } from "next/navigation";
 
-export default  function ProjectDetailPage() {
-  // Ensure params is properly awaited
+export default function ProjectDetailPage() {
   const { id } = useParams();
-
   const project = projects.find((p) => p.id === id);
 
   if (!project) {

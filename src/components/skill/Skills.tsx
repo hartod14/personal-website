@@ -32,7 +32,6 @@ const skillCategories: SkillCategory[] = [
       { name: "MySQL ", image: "/portfolio/skills/mysql.png" },
       { name: "GraphQL ", image: "/portfolio/skills/graphql.png" },
       { name: "TypeScript ", image: "/portfolio/skills/typescript.png" },
-
     ],
   },
   {
@@ -42,16 +41,16 @@ const skillCategories: SkillCategory[] = [
       { name: "Git", image: "/portfolio/skills/git.png" },
       { name: "Figma", image: "/portfolio/skills/figma.png" },
       { name: "Midtrans", image: "/portfolio/skills/midtrans.png" },
-
+      { name: "cPanel", image: "/portfolio/skills/cpanel.png" },
     ],
   },
 ];
 
 export default function Skills() {
   return (
-    <section className="py-24 px-4 md:px-20">
+    <div>
       <Title title="My Skills" />
-      
+
       <div className="md:flex justify-center gap-20 mt-10">
         {skillCategories.map((category) => (
           <div key={category.title} className="mb-10 flex-1 max-w-[400px]">
@@ -83,6 +82,6 @@ export default function Skills() {
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 }

@@ -25,7 +25,10 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({
   return (
     <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
-        <Link href="/" className="text-blue-600 hover:text-blue-800 flex items-center mb-6">
+        <Link
+          href="/"
+          className="text-blue-600 hover:text-blue-800 flex items-center mb-6"
+        >
           <FontAwesomeIcon icon={faArrowLeft} className="mr-2 w-4 h-4" />
           Back to Home
         </Link>
@@ -48,12 +51,16 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({
         </div>
 
         <div className="mb-8">
-          <h2 className="text-2xl font-medium text-gray-800 mb-3">Project Overview</h2>
+          <h2 className="text-2xl font-medium text-gray-800 mb-3">
+            Project Overview
+          </h2>
           <p className="text-gray-700 leading-relaxed">{projectOverview}</p>
         </div>
 
         <div className="mb-8">
-          <h2 className="text-2xl font-medium text-gray-800 mb-3">Key Features</h2>
+          <h2 className="text-2xl font-medium text-gray-800 mb-3">
+            Key Features
+          </h2>
           <ul className="list-disc list-inside text-gray-700 leading-relaxed">
             {keyFeatures.map((feature, index) => (
               <li key={index}>{feature}</li>
@@ -62,12 +69,16 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({
         </div>
 
         <div className="mb-8">
-          <h2 className="text-2xl font-medium text-gray-800 mb-3">Challenges & Solutions</h2>
-          <p className="text-gray-700 leading-relaxed">{challengesAndSolutions}</p>
+          <h2 className="text-2xl font-medium text-gray-800 mb-3">
+            Challenges & Solutions
+          </h2>
+          <p className="text-gray-700 leading-relaxed">
+            {challengesAndSolutions}
+          </p>
         </div>
       </div>
     </div>
   );
 };
 
-export default ProjectDetail; 
+export default ProjectDetail;

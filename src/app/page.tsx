@@ -1,13 +1,5 @@
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import {
-  faLinkedinIn,
-  faFacebook,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
 import "@/styles/portfolio/style.css";
-import Link from "next/link";
 import Title from "../components/common/Title";
 import Skills from "../components/skill/Skills";
 import BlinkText from "../components/portfolio/BlinkText";
@@ -25,7 +17,7 @@ export default function Home() {
       <main>
         <section
           id="text-box"
-          className="flex flex-col gap-5 mt-16 md:mt-32 mb-40 md:mb-52 px-4 md:px-20 relative"
+          className="flex flex-col gap-5 md:mt-32 mb-40 md:mb-52 px-4 md:px-20 relative"
         >
           <div className="text-2xl text-center text-blue-600">
             👋 Hello, My name is
@@ -64,9 +56,13 @@ export default function Home() {
           </div>
         </section>
 
-        <Skills />
+        <section id="skill" className="py-24 px-4 md:px-20">
+          <Skills />
+        </section>
 
-        <Experience />
+        <section id="experience" className="py-24 px-4 md:px-20 bg-[#FAFCFD]">
+          <Experience />
+        </section>
 
         <section id="works" className="py-20 px-4 md:px-20">
           <Title title="My Projects" />
@@ -88,7 +84,12 @@ export default function Home() {
           </div>
         </section>
 
-        <Contact />
+        <section
+          id="contact"
+          className="flex flex-col gap-5 mt-16 bg-[#FAFCFD] pt-52 pb-44"
+        >
+          <Contact />
+        </section>
       </main>
       <Footer />
     </>

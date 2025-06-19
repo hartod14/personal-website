@@ -42,7 +42,7 @@ const Navbar = () => {
             className="font-normal hover:-translate-y-1 hover:text-blue-600 transition-all duration-200"
             href="#works"
           >
-            Works
+            Projects
           </a>
           <a
             className="font-normal hover:-translate-y-1 hover:text-blue-600 transition-all duration-200"
